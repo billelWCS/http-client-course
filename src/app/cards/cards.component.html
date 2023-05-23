@@ -1,0 +1,5 @@
+<div class="container p-5 d-flex flex-column">
+    <a class="cursor-pointer" *ngFor="let card of cardsList" (click)="goToCard(card.id)">
+        {{card.name}}
+    </a>
+</div>

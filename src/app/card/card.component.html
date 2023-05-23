@@ -1,0 +1,20 @@
+<div class="container p-5">
+    <div class="row">
+        <div class="col">
+            <img [src]="card.imageUrlHiRes" alt="">
+        </div>
+        <div class="col">
+            <span>Name : {{card.name}}</span>
+            <div>Les attaques : </div>
+            <div *ngFor="let attack of card.attacks">
+                <ul>
+                    cost :
+                    <li *ngFor="let c of attack.cost">{{c}}</li>
+                </ul>
+                <p>name : {{attack.name}}</p>
+                <p>text : {{attack.text}}</p>
+            </div>
+        </div>
+    </div>
+    
+</div>
